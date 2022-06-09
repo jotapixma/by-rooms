@@ -1,1 +1,65 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ducimus maxime, ad non, facilis voluptatum eius tenetur repellendus amet totam esse ullam omnis laboriosam. Ducimus eligendi ipsum necessitatibus sequi ab provident explicabo unde asperiores nemo, ipsa veniam fugit, illum reprehenderit itaque nostrum tenetur. Quidem numquam perferendis, possimus nostrum commodi rerum. Praesentium excepturi necessitatibus exercitationem, quo consequuntur temporibus natus doloribus suscipit ea minus itaque, velit distinctio, molestias totam placeat nostrum? Aut laudantium mollitia cumque repellendus aliquam libero totam exercitationem, reprehenderit ex voluptas suscipit est consectetur veritatis, esse architecto facilis quo. In doloremque adipisci eos? Soluta illum mollitia perspiciatis nam temporibus provident.</p>
+
+if( woodmart_is_woo_ajax() === 'fragments' ) {
+  woodmart_woocommerce_main_loop( true );
+  die();
+}
+
+
+if ( ! woodmart_is_woo_ajax() ) {
+  get_header( 'shop' ); 
+} else {
+  woodmart_page_top_part();
+}
+
+
+$cat_desc_position = woodmart_get_opt( 'cat_desc_position' );
+
+
+<div class="row">
+  <div class="col-12">
+      <section class="categories-panel">
+          <div class="container">
+            <h1 class="title">¿Que tipo de deporte practica tu papá?</h1>
+            <div class="flex-row">
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Yoga</h2>
+              </div>
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Gym</h2>
+              </div>
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Boxeo</h2>
+              </div>
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Crossfit</h2>
+              </div>
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Runnig</h2>
+              </div>
+              <div class="card-box">
+                <figure class="card-mask">
+                  <img src="https://picsum.photos/200" alt="img-square">
+                </figure>
+                <h2>Pesas</h2>
+              </div>
+            </div>
+          </div>
+      </section>
+  </div>
+</div>
