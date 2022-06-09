@@ -10,7 +10,7 @@ const FeaturedProduct = () => {
     return (
       <section>
         <Container>
-          <h2>ROOMS YG-91</h2>
+          <h2>ROOMS YG-239</h2>
           <Image src={rayban} alt="Logo" class="img-fluid" />
         </Container>
       </section>
