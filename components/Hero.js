@@ -20,7 +20,7 @@ const Hero = () => {
     return (
       <section className={styles.hero}>
         <Container>
-            <h1>AQUI EL HERO CON LAS CATEGORIAS 99</h1>
+            <h1>AQUI EL HERO CON LAS CATEGORIAS</h1>
         </Container>
       </section>
     );
