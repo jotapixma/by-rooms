@@ -3,7 +3,10 @@
 html,
 body {
   padding: 0;
+  height: 100%;
+  position: relative;
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -17,7 +20,6 @@ a {
   box-sizing: border-box;
 }
 
-
-section{
-  padding: 40px 0;
+figure {
 }
+
