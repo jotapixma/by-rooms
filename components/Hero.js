@@ -1,6 +1,7 @@
 //@flow
 import React, {useEffect, useState} from "react";
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import Image from 'next/image'
 import styles from '../styles/components/Hero.module.scss';
 
 /**
@@ -20,7 +21,7 @@ const Hero = () => {
     return (
       <section className={styles.hero}>
         <Container>
-            <h1>AQUI EL HERO CON LAS CATEGORIAS</h1>
+            {/* <h1>AQUI EL HERO CON LAS CATEGORIAS</h1> */}
         </Container>
       </section>
     );
