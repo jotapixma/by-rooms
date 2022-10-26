@@ -1,0 +1,17 @@
+.footerWinch{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  &__info{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__rights{
+    .textBrand{
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

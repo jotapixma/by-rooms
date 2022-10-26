@@ -1,0 +1,64 @@
+.collectionCard {
+  background-color: $white;
+  border: 1px solid $gray_border;
+  position: relative;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  margin: 1rem;
+  display: flex;
+  max-width: 385px;
+  
+  .bodyFit{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  &__image {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    text-transform: capitalize;
+    color: $gray_600;
+
+    &.w600 {
+      font-weight: 500;
+    }
+  }
+
+  .priceRow {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    &__price {
+      color: $red_tag;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+  }
+
+  button {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.250s ease-in;
+    font-size: 1rem;
+    padding: 4px 20px;
+  }
+
+  &:hover {
+    button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

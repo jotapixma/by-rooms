@@ -1,0 +1,51 @@
+.footer{
+  padding: 4rem 0 1rem;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .helpContainer{
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .formRow{
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+    margin: 1rem 0 2rem 0;
+    .customInput{
+      width: 330px;
+      height: 56px ;
+      border-radius: 5px;
+      border: 0;
+      button{
+        min-width: 210px;
+      }
+    }
+  }
+  .rrssRow{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .gridLists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .unorderList{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+      li{
+        font-weight: 400;
+        font-size: 16px;
+        margin: 1rem 0;
+        &:first-child{
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}

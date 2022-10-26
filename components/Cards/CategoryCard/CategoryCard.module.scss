@@ -1,0 +1,46 @@
+.categoryCard{
+  margin-right: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: 99;
+  &__img{
+    &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(32, 33, 35, 0.4);
+      z-index: 10;
+    }
+    img{
+      border-radius: 8px;
+      transition: all 0.250s ease-in-out;
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  &__boxTitle{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    .cardTitle{
+      color: $white;
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}

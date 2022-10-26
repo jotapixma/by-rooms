@@ -1,6 +1,6 @@
 //@flow
 import React from "react";
-import Container from 'react-bootstrap/Container'
+import Container from '@mui/material/Container';
 import styles from '../styles/components/AboutUs.module.scss';
 
 const AboutUs = () => {

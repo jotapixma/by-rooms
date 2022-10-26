@@ -1,0 +1,54 @@
+.orderCard{
+  padding: 0.5rem 0;
+  .bodyBox{
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    &__textSide{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem 0;
+      .title{
+        font-size: 14px;
+        color: $semi_black;
+        font-weight: 500;
+      }
+      .amount{
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray_600;
+      }
+      .inputControls {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        // margin-top: 0.5rem;
+        .buttonControl {
+          background-color: $gray_10;
+          border: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 5px;
+        }
+
+        .customInput {
+          width: 15%;
+          text-align: center;
+          border: 0;
+          height: 25px;
+          outline: none;
+        }
+      }
+
+    }
+    &__imgSide{
+      margin-right: auto;
+      .imgMask{
+        filter: drop-shadow(0px 2.29412px 4.58824px rgba(0, 0, 0, 0.15));
+        background-color: $white;
+        padding: 0.5rem;
+        border-radius: 6px;
+      }
+    }
+  }
+}

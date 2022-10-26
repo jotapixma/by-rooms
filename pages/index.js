@@ -1,18 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.scss'
-import TopNav from '../components/TopNav'
-import Hero from '../components/Hero'
-import FeaturedProduct from '../components/FeaturedProduct'
+// import Hero from '../components/Hero'
+import ProductList from '../components/ProductList/ProductList'
 import AboutUs from '../components/AboutUs'
 
 export default function Home() {
   return (
     <>
-      <TopNav/>
-      <Hero/>
-      <FeaturedProduct/>
-      <AboutUs/>
+      {/* <Hero/> */}
+      <ProductList title="Rooms Outdoor"/>
+      <ProductList title="Rooms Summer" />
+      {/* <AboutUs/> */}
     </>
   )
 }

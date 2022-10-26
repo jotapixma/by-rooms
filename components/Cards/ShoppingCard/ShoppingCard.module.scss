@@ -1,0 +1,74 @@
+.shoppingCard{
+  .itemsRow {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    margin-bottom: 1rem;
+
+    &__imgSide {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      .imgCard {
+        background-color: $white;
+        padding: 0;
+        border-radius: 6px;
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 90px;
+      }
+
+      .optionRow {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        svg{
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__infoSide {
+      display: flex;
+      gap: 2rem;
+      .textPanel{
+        display: flex;
+        flex-direction: column;
+      }
+      .boxPrice {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        &__discount {
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: line-through;
+          color: $primary;
+        }
+
+        &__normal {
+          font-size: 13px;
+          color: $gray_800;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__infoSide,
+    &__imgSide {
+      .title {
+        font-size: 1rem;
+        color: $gray_1000;
+        font-weight: 500;
+      }
+
+      .description {
+        font-size: 0.8rem;
+        color: $gray_description;
+      }
+    }
+  }
+}
