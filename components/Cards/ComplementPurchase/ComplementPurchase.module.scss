@@ -1,0 +1,35 @@
+.complementCard{
+  margin: 1rem;
+  position: relative;
+  &__image{
+    height: 100%;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: $white;
+    gap: 1.2rem;
+    .cardTitle{
+      font-weight: 700;
+      font-style: normal;
+    }
+    .panelButton {
+      display: inline-flex;
+      button{
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+  }
+}

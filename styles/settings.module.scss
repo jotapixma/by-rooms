@@ -1,2 +1,54 @@
 // colors 
-$black: #020300;
+$black: #000000;
+$semi_black: #151515;
+$white: #FFFFFF;
+$bg_default: #F2F2F2;
+$bg_footer: #202123;
+
+$gray_1000: #181826;
+$gray_900: #212134;
+$gray_800: #32324D;
+$gray_700: #757D8A;
+$gray_600: #666687;
+$gray_400: #A5A5BA;
+$gray_300: #C0C0CF;
+$gray_200: #EAEAEF;
+$gray_100: #F6F6F9;
+$gray_10: #F9F9F9;
+
+$primary: #e3aa40;
+$red_tag: #FF0000;
+$red_error: #B72B1A;
+$yellow_star: #FCA549;
+$primary_tag: #FCEBE8;
+$green_tag: #EAF2ED;
+$green: #5CB176;
+$green_text: #2F6846;
+$bg_cream: #FFFCF3;
+
+$gray_default: #575756;
+$gray_border: #D1D1D1;
+$gray_description: #A9A9A9;
+$gray_dots: #9B9B9B;
+$gray_paragraph: #4A4A6A;
+$gray_paragraph_2: #5A6474;
+$gray_paragraph_3: #828282;
+$gray_divisor: #D1D1D1;
+$gray_divisor2: #E0E0E0;
+$winch_modal: #FFF1EC;
+
+//buttons
+$button_secondary: #2E2E2E;
+
+// :export{
+//   blackColor: $black;
+// }
+
+$fontFamilyOutfit: 'Outfit', sans-serif;
+
+//breakpoints MUI
+
+$breakpoint_sm: 600px;
+$breakpoint_md: 900px;
+$breakpoint_lg: 1200px;
+$breakpoint_xl: 1536px;

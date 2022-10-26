@@ -1,0 +1,101 @@
+.orderCard {
+  padding: 0.5rem 0;
+
+  .bodyBox {
+    display: grid;
+    grid-template-columns: 0.25fr 0.65fr 0.1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+
+    &__textSide {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      .title {
+        color: $semi_black;
+        font-weight: 500;
+      }
+      .sku{
+        font-size: 12px;
+        display: block;
+        font-weight: 400;
+        color: $gray_paragraph_3;
+      }
+      .amount {
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray_600;
+      }
+      .inputControls {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        .buttonControl {
+          background-color: $gray_10;
+          border: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 5px;
+        }
+        .customInput {
+          width: 15%;
+          text-align: center;
+          border: 0;
+          height: 25px;
+          outline: none;
+        }
+      }
+    }
+
+    &__imgSide {
+      margin-right: auto;
+
+      .imgMask {
+        filter: drop-shadow(0px 2.29412px 4.58824px rgba(0, 0, 0, 0.15));
+        background-color: $white;
+        padding: 0.5rem;
+        border-radius: 6px;
+      }
+    }
+    &__amountSide{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .amount{
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray_800;
+      }
+    }
+  }
+}
+
+
+
+        // color: white;
+        // position: absolute;
+        // top: 20px;
+        // right: 16px;
+        // background-color: #1e6dcb;
+        // font-family: Roboto;
+        // font-weight: 700 !important;
+        // margin: 0;
+        // width: auto;
+        // font-size: 11.5px !important;
+        // border-radius: 4px;
+        // z-index: 100;
+        // padding: 1px 6px;
+        // line-height: 20px;
+
+        // @media only screen and (max-width: 600px) {
+        //   li.product.minimal{
+        //     padding-bottom: 8px;
+        //   }
+        //   .benefits-tag{
+        //     bottom: 8px;
+        //     top: inherit;
+        //     left: 20px;
+        //     right: inherit;
+        //   }
+        // }

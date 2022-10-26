@@ -1,0 +1,34 @@
+.cardProfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  &__mask{
+    background-color: $bg_default;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  &__head{
+    text-align: center;
+    .name{
+      color: $gray_1000;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+    .position{
+      font-size: 14.5px;
+      font-weight: 400;
+      color: $gray_800;
+    }
+  }
+  &__description{
+    padding: 0;
+    color: $gray_900;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;  
+    letter-spacing: 0.01em;
+  }
+}

@@ -1,6 +1,5 @@
 //@flow
 import React, {useEffect, useState} from "react";
-import Container from 'react-bootstrap/Container';
 import Image from 'next/image'
 import styles from '../styles/components/Hero.module.scss';
 

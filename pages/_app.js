@@ -1,11 +1,13 @@
 import '../styles/global.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import SSRProvider from 'react-bootstrap/SSRProvider';
+// import SSRProvider from 'react-bootstrap/SSRProvider';
+import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
-  return <SSRProvider>
+  return ( 
+    <Layout>
       <Component {...pageProps} />
-    </SSRProvider>
+    </Layout>
+  )
 }
 
 export default MyApp

@@ -21,5 +21,11 @@ a {
 }
 
 figure {
+  margin: 0;
 }
 
+//layout
+
+.MuiContainer-maxWidthLg {
+  max-width: 1440px !important;
+}
