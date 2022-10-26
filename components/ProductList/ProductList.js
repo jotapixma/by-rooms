@@ -2,10 +2,10 @@
 import React from "react";
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import rayban from '../public/sunglases-rayban.png';
 import Image from 'next/image'
-import styles from '../styles/components/Hero.module.scss';
-import ProductCard from "./Cards/ProductCard/ProductCard";
+// import styles from '../styles/components/Hero.module.scss';
+import ProductCard from "../Cards/ProductCard/ProductCard";
+import styles from './ProductList.module.scss'
 
 let items = [
   {
@@ -31,17 +31,18 @@ let items = [
     "image": "/sunglases-rayban.png",
     "title": 'Rooms Black',
     "description": 'Encuentra productos con despacho rápido en RM.'
-  }
+  },
 ];
 
 
-const FeaturedProduct = () => {
+const ProductList = ({title}) => {
     return (
-      <section>
+      <section className={styles.productList}>
         <Container>
+          <h1 className={styles.titleSection}>{title}</h1>
           <Grid container spacing={2}>
             {items.map((item) => (
-              <Grid item xs={6} md={4}>
+              <Grid item xs={6} md={3}>
                 <ProductCard product={item} key={item.id}/>
               </Grid>
               ))
@@ -52,5 +53,5 @@ const FeaturedProduct = () => {
     );
 };
 
-export default FeaturedProduct;
+export default ProductList;
 

@@ -20,7 +20,7 @@ const ProductCard = ({product}) => {
 
           </div>
           <figure className={styles.productCard__image}>
-            <Image src={product.image} width={196} height={169} layout="intrinsic" alt={product.title} />
+            <Image src={product.image} width={2500} height={1400} layout="intrinsic" alt={product.title} />
           </figure>
  
     

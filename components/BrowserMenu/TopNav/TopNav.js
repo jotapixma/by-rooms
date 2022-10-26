@@ -6,6 +6,7 @@ import SearchBar from "../SearchBar/SearchBar"
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SideBarShoppingCart from '../../SideBarShoppingCart/SideBarShoppingCart';
+import Link from 'next/link'
 import styles from './TopNav.module.scss'
 
 export default function TopNav() {
@@ -25,24 +26,27 @@ export default function TopNav() {
           alignItems="center"
           flexWrap="nowrap"
         >
-          <div>
-            <figure className={styles.imgContainer}>
-              <Image src='/logo-rooms.png' width={146} height={100} layout="intrinsic"></Image>
-            </figure>
-          </div>
+          <Link href="/">
+            <a>
+              <figure className={styles.imgContainer}>
+                <Image src='/logo-rooms.png' width={146} height={100} layout="intrinsic"></Image>
+              </figure>
+            </a>
+          </Link>
           <div className={styles.listItemsContainer}>
             <ul className={styles.listItems}>
               <li className={styles.active}>
                 <a href="" rel="noreferrer">Shop</a>
               </li>
               <li>
-                <a href="" rel="noreferrer">Faqs</a>
+                <Link href="faqs">
+                  <a rel="noreferrer">Faqs</a>
+                </Link>
               </li>
               <li>
-                <a href="" rel="noreferrer">Conocenos</a>
-              </li>
-              <li>
-                <a href="" rel="noreferrer">Entrenamiento y Fitness</a>
+                <Link href="knowus">
+                  <a rel="noreferrer">Conocenos</a>
+                </Link>
               </li>
             </ul>
           </div>

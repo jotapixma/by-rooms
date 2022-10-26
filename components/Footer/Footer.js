@@ -35,20 +35,10 @@ export default function Footer() {
         <div className="bootstrap-container">
           <Grid container>
             <Grid item xs={12} md={6}>
-              <div className={styles.helpContainer}>
-                <figure>
-                  <Image src="/help-center.svg" width={62} height={62} layout="intrinsic"></Image>
-                </figure>
-                <div className={styles.helpContainer__row}>
-                  <h3>¿Necesitas ayuda?</h3>
-                  <p>Resuelve tus dudas y consultas aquí</p>
-                </div>
-              </div>
               <p>Suscribete para conocer todos nuestros eventos, lanzamientos y novedades.</p>
-              <p>Además podrás recibir descuentos exclusivos.</p>
               <div className={styles.formRow}>
                 <input className={styles.customInput} type="text" />
-                <button className="button button--primary">Suscribirme</button>
+                <button className="button button--primary">Suscribir</button>
               </div>
               <p>Síguenos en redes sociales</p>
               <div className={styles.rrssRow}>
@@ -72,21 +62,14 @@ export default function Footer() {
             </Grid>
             <Grid item xs={12} md={6}>
               <div className={styles.gridLists}>
-                <ul className={styles.unorderList}>Productos
-                  <li>Elípticas</li>
-                  <li>Bicicletas Estáticas</li>
-                  <li>Bicicletas Spinning</li>
-                  <li>Boxeo y Combate</li>
-                  <li>Entrenamiento y Fitness</li>
-                  <li>Trotadoras</li>
+                <ul className={styles.unorderList}>Colecciones
+                  <li>Rooms Outdoor</li>
+                  <li>Rooms Summer</li>
                 </ul>
                 <ul className={styles.unorderList}>Información
-                  <li>Tiendas</li>
-                  <li>Cotizaciones</li>
+                  <li>Shop</li>
+                  <li>Conocenos</li>
                   <li>Preguntas Frecuentes</li>
-                  <li>Términos y Condiciones</li>
-                  <li>Información de Reservas</li>
-                  <li>Información de Despachos</li>
                 </ul>
               </div>
             </Grid>
