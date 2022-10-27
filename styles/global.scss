@@ -23,6 +23,21 @@ a {
   box-sizing: border-box;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.default-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 0;
+  color: $gray_900;
+  &--white {
+    color: $white;
+  }
+}
+
 figure {
   margin: 0;
 }

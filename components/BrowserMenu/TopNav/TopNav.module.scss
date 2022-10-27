@@ -18,6 +18,9 @@ section{
           font-weight: 500;
           position: relative;
           padding: 0 0.5rem;
+          a{
+            text-transform: uppercase;
+          }
           &.active{
             a{
               color: $primary;
