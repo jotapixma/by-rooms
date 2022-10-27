@@ -5,7 +5,9 @@ import Container from '@mui/material/Container';
 import Image from 'next/image'
 // import styles from '../styles/components/Hero.module.scss';
 import ProductCard from "../Cards/ProductCard/ProductCard";
+import { htmlConverter } from '../../utils/utils';
 import styles from './ProductList.module.scss'
+import { style } from "@mui/system";
 
 let items = [
   {
@@ -35,11 +37,14 @@ let items = [
 ];
 
 
-const ProductList = ({title}) => {
+const ProductList = ({title,description}) => {
     return (
       <section className={styles.productList}>
         <Container>
           <h1 className={styles.titleSection}>{title}</h1>
+          <div className={styles.descriptionPanel}>
+            <div dangerouslySetInnerHTML={htmlConverter(description)}></div>
+          </div>
           <Grid container spacing={2}>
             {items.map((item) => (
               <Grid item xs={6} md={3} key={item.id}>

@@ -5,4 +5,13 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .descriptionPanel{
+    max-width: 60%;
+    margin: 0 auto;
+    p{
+      color: $gray_600;
+      font-size: 0.95rem;
+      line-height: 24px;
+    }
+  }
 }

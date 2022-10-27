@@ -1,0 +1,12 @@
+.faqsPanel {
+  padding: 4rem 0;
+  background-color: $gray_100;
+
+  .faqsBox {
+    margin: 3rem 0 2rem;
+
+    &__description {
+      color: $gray_800;
+    }
+  }
+}
