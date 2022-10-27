@@ -42,8 +42,8 @@ const ProductList = ({title}) => {
           <h1 className={styles.titleSection}>{title}</h1>
           <Grid container spacing={2}>
             {items.map((item) => (
-              <Grid item xs={6} md={3}>
-                <ProductCard product={item} key={item.id}/>
+              <Grid item xs={6} md={3} key={item.id}>
+                <ProductCard product={item}/>
               </Grid>
               ))
             }
